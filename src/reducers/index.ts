@@ -1,4 +1,4 @@
-export default (state = 0, action: { type: string; [key: string]: any }) => {
+export default (state = 0, action: { type?: string; [key: string]: any }) => {
   switch (action.type) {
     case "INCREMENT":
       return state + 1;
